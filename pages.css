@@ -1,81 +1,113 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
 }
-body, .header, .aside, .footer{
-    background-color: #484f6d;
+
+body,
+.header,
+.aside,
+.footer {
+  background-color: #484f6d;
 }
+
 .header {
-    height: 14em ;
-    margin-top: 0;
+  height: 14em;
+  margin-top: 0;
 }
+
 .ma-photo {
-    float: left;
-    height: 10em;
-    padding-top: 1em;
-    padding-left: 2em;
+  float: left;
+  height: 10em;
+  padding-top: 1em;
+  padding-left: 2em;
 }
-.titre, .article, .footer, td, th{
-    text-align: center;
+
+.titre,
+.article,
+.footer,
+td,
+th {
+  text-align: center;
 }
+
 .subtitle {
-    font-weight: 100;
+  font-weight: 100;
 }
+
 .main {
-    display: flex;
+  display: flex;
 }
+
 .aside {
-    flex: 1;
+  flex: 1;
 }
-.section, .section-comp {
-    background-color: rgb(141, 141, 141);
+
+.section,
+.section-comp {
+  background-color: rgb(141, 141, 141);
 }
-.section{
-    flex: 4;
-    display: block;
+
+.section {
+  flex: 4;
+  display: block;
 }
-.section-comp{
-    flex: 4;
-    display: flex;
+
+.section-comp {
+  flex: 4;
+  display: flex;
 }
+
 .article {
-    padding: 2em;
+  padding: 2em;
 }
-table{
-    border-collapse: collapse;
-    margin-top: 2em;
+
+table {
+  border-collapse: collapse;
+  margin-top: 2em;
 }
-td, th{
-    border: solid 2px #484f6d;
+
+td,
+th {
+  border: solid 2px #484f6d;
 }
-ul{
-    padding: 0;
+
+ul {
+  padding: 0;
 }
+
 li {
-    list-style-type: none;
-    padding: 1em;
+  list-style-type: none;
+  padding: 1em;
 }
-.table{
-    width: 100%;
-    margin-top: 3em;
+
+.table {
+  width: 100%;
+  margin-top: 3em;
 }
+
 .savoir > li {
-    list-style-type: circle;
-    text-align: left;
+  list-style-type: circle;
+  text-align: left;
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-a:hover{
-    text-decoration: underline;
+
+a:hover {
+  text-decoration: underline;
 }
-.active{
-    background-color: #a11b1b;
+
+.active {
+  background-color: #a11b1b;
 }
-.footer, a {
-    color: white;
-    padding: 0.2em;
-  }
-.p-footer{
-    font-size: small;
+
+.footer,
+a {
+  color: white;
+  padding: 0.2em;
+}
+
+.p-footer {
+  font-size: small;
 }

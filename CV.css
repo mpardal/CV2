@@ -1,164 +1,209 @@
 body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-  }
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
 .header {
-    margin: 1%;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 90% 10%;
-    grid-template-areas: 
+  margin: 1%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 90% 10%;
+  grid-template-areas:
     "photo title"
     "photo objectif";
-  }
-body, .header, .footer{
+}
+
+body,
+.header,
+.footer {
   background-color: #484f6d;
 }
+
 .ma-photo {
-    grid-area: photo;
-    float: left;
-    height: 10em;
-    padding-top: 1em;
-    padding-left: 2em;
-    transform: none;
-  }
-.title, .objectif {
-    color: rgb(2, 2, 61);
-  }
-.title {
-    grid-area: title;
-    font-size: 5em;
-  }
+  grid-area: photo;
+  float: left;
+  height: 10em;
+  padding-top: 1em;
+  padding-left: 2em;
+  transform: none;
+}
+
+.title,
 .objectif {
-    grid-area: objectif;
-    font-size: 1em;
-  }
+  color: rgb(2, 2, 61);
+}
+
+.title {
+  grid-area: title;
+  font-size: 5em;
+}
+
+.objectif {
+  grid-area: objectif;
+  font-size: 1em;
+}
+
 .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
     "art1 art2 art3"
     "art4 art5 art6";
-  }
-.art1, .art2, .art3, .art4, .art5, .art6, .art7, .title, .objectif, .header, .footer{
+}
+
+.art1,
+.art2,
+.art3,
+.art4,
+.art5,
+.art6,
+.art7,
+.title,
+.objectif,
+.header,
+.footer {
   text-align: center;
 }
-.lien{
+
+.lien {
   text-decoration: none;
 }
-.img:hover{
-  transform: scale(1.1, 1.1);
+
+.img:hover {
+  transform: scale(1.1);
 }
+
 h2 {
   font-weight: 100;
   color: #e80808;
 }
+
 img {
   width: 80%;
   height: 80%;
 }
-p{
+
+p {
   font-size: 1.5em;
   color: #a4a4a4;
 }
+
 .art1 {
-    grid-area: art1;
-  }
+  grid-area: art1;
+}
+
 .art2 {
-    grid-area: art2;
-  }
+  grid-area: art2;
+}
+
 .art3 {
-    grid-area: art3;
-  }
+  grid-area: art3;
+}
+
 .art4 {
-    grid-area: art4;
-  }
+  grid-area: art4;
+}
+
 .art5 {
-    grid-area: art5;
-  }
+  grid-area: art5;
+}
+
 .art6 {
-    grid-area: art6;
-  }
+  grid-area: art6;
+}
+
 .footer {
-    margin-top: 5%;
-  }
-.p-footer{
+  margin-top: 5%;
+}
+
+.p-footer {
   font-size: small;
   color: white;
 }
-@media screen and (max-width: 2550px){
-h2{
-  margin-top: 5em;
-}
-}
-@media screen and (max-width: 2200px){
-    .main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto auto;
-      grid-template-areas:
-    "art1 art2"
-    "art3 art4"
-    "art5 art6";
-    }
+
+@media screen and (max-width: 2550px) {
+  h2 {
+    margin-top: 5em;
   }
-@media screen and (max-width: 1500px){
+}
+
+@media screen and (max-width: 2200px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "art1 art2"
+      "art3 art4"
+      "art5 art6";
+  }
+}
+
+@media screen and (max-width: 1500px) {
   .main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas:
-    "art1"
-    "art2"
-    "art3"
-    "art4"
-    "art5"
-    "art6";
+      "art1"
+      "art2"
+      "art3"
+      "art4"
+      "art5"
+      "art6";
   }
+
   .article {
     margin-top: 3em;
   }
 }
-@media screen and (max-width: 875px){
+
+@media screen and (max-width: 875px) {
   .main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas:
-    "art1"
-    "art2"
-    "art3"
-    "art4"
-    "art5"
-    "art6";
+      "art1"
+      "art2"
+      "art3"
+      "art4"
+      "art5"
+      "art6";
   }
+
   .footer {
     margin-top: 10%;
   }
 }
-@media screen and (max-width: 580px){
+
+@media screen and (max-width: 580px) {
   .footer {
     text-align: center;
     background-color: #484f6d;
     padding: 0.2em;
     margin-top: 10%;
   }
+
   .article {
     margin-top: 5em;
   }
-  .title{
+
+  .title {
     font-size: xx-large;
   }
+
   .header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas:
-    "title"
-    "photo"
-    "objectif";
+      "title"
+      "photo"
+      "objectif";
   }
-  .ma-photo{
+
+  .ma-photo {
     float: none;
     padding-right: 0;
     display: block;
@@ -166,8 +211,8 @@ h2{
     margin-right: auto;
     margin-bottom: 1em;
   }
+
   .footer {
     margin-top: 15%;
   }
 }
-
